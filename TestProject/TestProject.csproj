@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Angular\src\app\app.routes.ts" />
+    <None Remove="Angular\src\app\List.component.ts" />
+    <None Remove="Angular\src\app\Products\list-add\add.component.ts" />
+    <None Remove="Angular\src\app\Products\list-delete\delete.component.ts" />
+    <None Remove="Angular\src\app\Products\list-update\update.component.ts" />
+    <None Remove="Angular\src\app\Products\list.component.ts" />
+    <None Remove="Angular\src\app\Products\list.module.ts" />
+    <None Remove="Angular\src\app\Products\list.routes.ts" />
+    <None Remove="Angular\src\app\Products\product.component.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="Angular\src\app\app.routes.ts" />
+    <TypeScriptCompile Include="Angular\src\app\Products\list-add\add.component.ts" />
+    <TypeScriptCompile Include="Angular\src\app\Products\list-delete\delete.component.ts" />
+    <TypeScriptCompile Include="Angular\src\app\Products\list-update\update.component.ts" />
+    <TypeScriptCompile Include="Angular\src\app\Products\list.component.ts" />
+    <TypeScriptCompile Include="Angular\src\app\Products\list.module.ts" />
+    <TypeScriptCompile Include="Angular\src\app\Products\list.routes.ts" />
+    <TypeScriptCompile Include="Angular\src\app\Products\product.component.ts" />
+  </ItemGroup>
+
+</Project>
